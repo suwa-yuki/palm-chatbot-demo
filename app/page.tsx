@@ -7,8 +7,8 @@ import { initializeApp } from 'firebase/app'
 import { getFirestore, collection, query, orderBy, limit, doc, addDoc, setDoc, onSnapshot, serverTimestamp } from 'firebase/firestore'
 
 const firebaseConfig = {
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  projectId: "<Firebase Project ID>",
+  apiKey: "<API Key>",
 }
 const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)
